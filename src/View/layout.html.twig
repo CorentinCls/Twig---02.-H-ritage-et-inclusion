@@ -8,11 +8,10 @@
 
     <title>{% block title %}Title par défaut{% endblock %}</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css"> 
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
 
 <body>
-    {% block content %}{% endblock %}
+    {% block content %} {% include '_navbar.html.twig' %} {% endblock %}
 </body>
 </html>
